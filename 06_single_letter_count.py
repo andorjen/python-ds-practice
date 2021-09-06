@@ -10,3 +10,10 @@ def single_letter_count(word, letter):
         >>> single_letter_count("Hello World", 'l')
         3
     """
+    word_lower = word.lower()
+    letter_lower = letter.lower()
+    sum_letter = 0
+    for l in word_lower:
+        if l==letter_lower:
+            sum_letter += 1
+    return sum_letter
