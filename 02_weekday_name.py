@@ -18,3 +18,5 @@ def weekday_name(day_of_week):
         return None
     else:
         return week_days[day_of_week-1]
+
+ # make week_days global vadiable, tuple?

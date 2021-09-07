@@ -58,4 +58,4 @@ def list_manipulation(lst, command, location, value=None):
             return None
 
 
-check if command in ["remove", "add"]
+# check if command in ["remove", "add"]
