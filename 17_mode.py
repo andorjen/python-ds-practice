@@ -11,10 +11,16 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
-    (highestNum,count)=(0,0)
-    uniqueNum= set(nums)
+    (highestNum, count) = (0, 0)
+    uniqueNum = set(nums)
     for num in uniqueNum:
         if nums.count(num) > count:
             count = nums.count(num)
             highestNum = num
     return highestNum
+
+
+# snake_case variables
+
+# frequency counter for O(n) solution
+# library - counter
