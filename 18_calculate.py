@@ -26,3 +26,29 @@ def calculate(operation, a, b, make_int=False, message='The result is'):
         >>> calculate('foo', 2, 3) is None
         True
     """
+
+    standard_operation = {"add", "subtract", "multiply", "divide"}
+
+    if (operation not in standard_operation):
+        return None
+
+    if (operation == "add"):
+        if (make_int):
+            return f"{message} {int(a+b)}"
+        return f"{message} {a+b}"
+
+    if (operation == "subtract"):
+        if (make_int):
+            return f"{message} {int(a-b)}"
+        return f"{message} {a-b}"
+
+    if (operation == "multiply"):
+        if (make_int):
+            return f"{message} {int(a*b)}"
+        return f"{message} {a*b}"
+
+    if (operation == "divide"):
+        if (make_int):
+            return f"{message} {int(a/b)}"
+        return f"{message} {a/b}"
+
