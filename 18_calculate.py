@@ -51,4 +51,3 @@ def calculate(operation, a, b, make_int=False, message='The result is'):
         if (make_int):
             return f"{message} {int(a/b)}"
         return f"{message} {a/b}"
-
